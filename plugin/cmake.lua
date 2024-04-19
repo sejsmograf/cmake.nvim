@@ -1,7 +1,10 @@
-local commands = require("cmake.commands")
+local popup = require("plenary.popup")
 
-vim.api.nvim_create_user_command(
-  "CMI",
-  commands.initialize_cmake_plugin,
-  { desc = "Initialize cmake.nvim configuration" }
-)
+local commands = require("cmake.subcommands")
+local run = require("cmake.run")
+
+vim.api.nvim_create_user_command("CM", run.run, {
+  nargs = "*",
+  desc = "Initialize cmake.nvim configuration, creates .cmake.nvim.json configuration file",
+  complete = run.complete,
+})
