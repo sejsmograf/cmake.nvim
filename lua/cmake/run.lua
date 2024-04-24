@@ -6,7 +6,6 @@ M.complete = function(arg, cmd_line)
 
   local words = vim.split(cmd_line, " ", { trimempty = true })
   if not vim.endswith(cmd_line, " ") then
-    -- Last word is not fully typed, don't count it
     table.remove(words, #words)
   end
 
