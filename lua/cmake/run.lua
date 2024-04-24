@@ -27,7 +27,8 @@ M.run = function(subcommand)
   end
 
   local subcommands_func = subcommands[subcommand.fargs[1]]
-  print(subcommands_func)
+
+  subcommands_func()
 end
 
 return M

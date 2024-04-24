@@ -22,7 +22,7 @@ M.join = function(path1, path2)
   end
 end
 
-M.create_dir = function(path) os.execute("mkdir " .. path) end
+M.create_dir = function(path) vim.fn.jobstart({ "mkdir", path }) end
 
 M.read_file = function(filename)
   local f = io.open(filename, "r")
