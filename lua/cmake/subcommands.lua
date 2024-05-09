@@ -39,4 +39,13 @@ M.build = function()
   UI.open_floating_window(output_lines)
 end
 
+M.run = function()
+  local config = user_config.get_user_config()
+  local command = string.format("%s/%s", config.build_dir, config.exec_name)
+  local output = vim.fn.system(command)
+  local output_lines = vim.split(output, "\n", {})
+  table.remove(output_lines, -1)
+  UI.open_floating_window(output_lines)
+end
+
 return M
