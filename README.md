@@ -11,7 +11,7 @@ Standard output of _cmake_ commands is shown in convenient popup window.
 ## Installation
 To install the plugin, you can use your favorite plugin manager.
 For example, if you are using [lazy.nvim](https://github.com/folke/lazy.nvim) just add 
-the following line to your _init.lua file:
+the following line to your _init.lua_ file:
 ```
 {"sejsmograf/cmake.nvim"}
 ```
