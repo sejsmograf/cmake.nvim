@@ -26,6 +26,16 @@ This plugin provides the command
 | `build` | Uses cmake to build the project. |
 | `run` | Run the executable defined in CMakeLists.txt. and .cmake.nvim.json file. Shows the output in a popup window. |
 
+## Example usage
+Run the commands in the following order:
+1. `:CM init` - to initialize the plugin
+2. `:CM configure` - to configure the project
+
+Once you configured the project, you can build and run it using the following commands:
+1. `:CM build` - to build the project
+2. `:CM run` - to run the project
+
+_Remember to have CMakeLists.txt file in the directory you are working in._
 
 ## Todos
 - Add more extensible configuration options
