@@ -21,7 +21,7 @@ This plugin provides the command
 `:CM` which you can use with one of the following arguments:
 | Argument | Description |
 | --- | --- |
-| `init` | Initializes cmake.nvim plugin inside the directory. Requires you to have _CMakeLists.txt_ inside it. _This command will create .cmake.nvim.json_ file, for storing your plugin configuration |
+| `init` | Initializes cmake.nvim plugin inside the directory. Requires you to have _CMakeLists.txt_ inside it. This command will create _.cmake.nvim.json_ file, for storing your plugin configuration |
 | `configure` | Calls cmake to configure the project. Uses the configuration from .cmake.nvim.json file. |
 | `build` | Uses cmake to build the project. |
 | `run` | Run the executable defined in CMakeLists.txt. and .cmake.nvim.json file. Shows the output in a popup window. |
